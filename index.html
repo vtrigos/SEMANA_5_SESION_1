@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Linkea a nuestro archivo de estilos para cambiar la apariencia de mi web-->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styletext.css">
+
+    <title>SELECTORES Y FUENTES</title>
+</head>
+<body>
+
+<main>
+
+    <!-- A esta etiqueta h1 se le aplica los estilos (color y fondo) asignados en el elemento h1 del archivo style.css tipo ETIQUETA-->
+    <header>
+        <h1>Los Géneros Literarios</h1>
+
+    <!-- A la etiqueta <b> se le asigna estilos tipo DESCENDENCIA del archivo style.css -->
+    <!-- A la etiqueta <a> (todos los enlaces dentro de p) se le asigna estilos modo HERENCIA del archivo style.css de su padre inmediato p-->
+
+        <p><b>Los géneros literarios</b> son diversas categorías que nos permiten clasificar de una forma fácil y
+            sencilla los diferentes textos literarios. Dependiendo de la <a href="#">temática</a>, la <a href="#">extensión</a>, el <a href="#">tono</a> e
+            incluso el propio <a href="#">contenido</a>, un libro formará parte de un género u de otro.</p>
+    </header>
+    
+    
+    <article class="subtitulos">
+
+    <!-- Todos los h2 se inicializaron en gris pero finalmente adoptan rojo oscuro según modo CASCADA del archivo style.css p-->
+
+    <h2>Tipos de géneros literarios</h2>
+        <p>Según el maestro Aristóteles, los cuatro géneros literarios debían ser:</p>
+        <ul>
+            <li><span class="generoliterario">Género narrativo</span>: también conocido como épico. Son todas aquellas narraciones que cuentan historias,
+                tanto verídicas como ficticias. Las principales temáticas suelen ser las tradiciones, el nacionalismo
+                y los acontecimientos heroicos de la época. Este género se reconoce hoy en día gracias a la novela.
+            </li>
+            <li><span class="generoliterario">Género lírico</span>: sentimientos y emociones a través de las poesías. Los poemas son la forma más habitual
+                de transmitir estas sensaciones. Es muy común el uso de recursos estilísticos como la comparación o la
+                metáfora.
+            </li>
+            <li><span class="generoliterario">Género didáctico</span>: no utiliza ningún recurso concreto, más bien se basa en la descripción de una idea
+                para así poder convencer al propio lector. Actualmente la mejor forma de reconocerlo es mediante el ensayo.
+            </li>
+            <li><span class="generoliterario">Género dramático</span>: diálogos donde se representan todo tipo de obras o cuentos en frente de espectadores.
+                El objetivo principal de este género no es otro que entretener al público.
+            </li>
+        </ul>
+    </article>            
+
+    <!-- En este ejemplo se le asigna a h3 una clase, etiqueta e INLINE para constatar el peso según ESPECIFICIDAD el color que tomará
+         según el estiloa sigando en el archivo style.css que finalmente es un color verde claro porque fue asignado con !IMPORTANT-->
+    <div>
+        <h3 style="color: brown" class="slogan" id="messagelectura">LEER ME CONECTA, ÚNETE A NOSOTROS!</h3>
+    </div>
+            
+    <!-- Clases subtitulos, generoliterario asigna estilos de texto detallados en el archivo styletext.css -->
+
+    <article class="subtitulos">
+    <h2>Subgéneros literarios</h2>
+        <p>En una posterior clasificación comenzaron a surgir estos subgéneros literarios.
+        </p>
+        <ul>
+            <li><span class="generoliterario">Novela</span>: narración extensa con un argumento mucho más complejo y la aparición de múltiples personajes.
+            </li>
+            <li><span class="generoliterario">Cuento</span>: es una narración breve que cuenta con la intervención de pocos personajes con un desarrollo
+                y fin.
+            </li>
+            <li><span class="generoliterario">Sátira</span>: mediante la burla y la ironía se explican temas relacionados con la época.
+            </li>
+            <li><span class="generoliterario">Comedia</span>: el desenlace es feliz y tiene un enfoque mucho más divertido y alegre.
+            </li>
+            <li><span class="generoliterario">Drama</span>: problemas familiares, desengañados, duelos de amor son algunos de los temas que más se ahondan
+                en este subgénero dramático.
+            </li>
+            <li><span class="generoliterario">Tragedia</span>: es una representación de conflictos tráficos, sobre todo, estaba muy relacionada con la
+                alta sociedad.
+            </li>
+            <li><span class="generoliterario">Biografía</span>: describe la vida exacta de una persona. Si es escrita por uno mismo, se conoce como autobiografía.
+            </li>
+            <li><span class="generoliterario">Ensayo</span>: es un texto escrito en prosa de una forma muy formal para dar a conocer o exponer una hipótesis o tema.
+            </li>
+        </ul>
+    </article>
+
+    <!--La clase pie quita los subrayados de los enlaces especificado en styletext.css -->
+
+    <footer class="pie">
+        <ol>
+            <li><a href="#">Avanzar</a></li>
+            <li><a href="#">Volver</a></li>
+        </ol>
+    </footer>
+
+</main>
+
+</body>
+</html>

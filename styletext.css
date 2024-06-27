@@ -1,0 +1,99 @@
+/* Asignado un tipo de letra de google fonts::after
+   Se copia el enlace antepeusto por @important y se coloca al inicio del archivo css y se llama en el elemento a asignar el estilo con font-family.
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+html {
+    font-size: 40px;  
+}
+
+h1 {
+    /* Este font-family llama el tipo de letrad e google fonts*/
+    font-family: "Meow Script";
+
+    /* font-weight establece el grosor de la fuente en este ejemplo depende de los valores ques e encuentran en el enlace copiado */    
+    font-weight: 400;
+
+    /* font-size establece el tamaño de la fuente en pixeles*/  
+    font-size: 60px;
+
+    /* text-align establece el alineamiento en este caso centra h1, puede alinear también a la derecha e izquierda*/  
+    text-align: center;
+}
+
+/* A h3 le asignamos la fuente impact que viene en por defecto puede ponerse sola pero si va acompañada de otras tipografias
+   estas serán usadas sino se encuentran*/
+
+h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
+
+    /* Convierte en minúsculas */
+    text-transform: lowercase;
+    /* Espacios entre caracteres */
+    letter-spacing: 5px;
+    /* Espcios entre palabras */
+    word-spacing: 5px;
+
+    text-align: center;
+}
+
+/* En este ejemplo La clase subtitulos asigna como tamaño de fuente 20 px y todos las etiquetas li
+   tendrán como tamaño 16px por usar em (0.8 equivale al 80%) ya que al estar dentro de la clase subtitulos toma como 100% 20 px
+   por ser el ancestro más cercano*/
+
+.subtitulos {
+    font-size: 20px;    
+ }
+
+  li
+ {
+    font-size: 0.8em;   
+ }
+
+ .subtitulos p{
+    /* Inserta espacios al inicio, como una sangria */
+    text-indent: 26px; 
+ }
+
+/* font size del p heredado es 20px por que al usar rem toma como 100% los 40px establecido en la etiqueta html y se debe solo a ella*/
+/* Los valores sino son asignados en pixeles al rem y al em es de 16px */
+
+header p 
+{
+ font-size: 0.5rem;
+}
+
+/* vh indica el alto del alto de la vista de pantalla 
+   vw establece el ancho visual de la pantalla */
+
+body {
+ min-height: 100vh;   
+ width:50vw;
+ background-color: aliceblue;
+}
+
+.generoliterario { 
+/* Negrita*/
+    font-weight: bold;
+/* Convierte en mayúsculas */
+    text-transform: uppercase;
+ 
+}
+
+
+/* Elimina el subrayado de los enlaces */
+footer a {
+    text-decoration: none;
+}
+
+/* lighter grosor de fuente delgado */
+
+.pie{
+    font-size: 20px;
+    font-weight: lighter;
+    color:blue;
+}

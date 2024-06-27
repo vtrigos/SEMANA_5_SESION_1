@@ -1,0 +1,71 @@
+/* Selector tipo ETIQUETA, el elemento se escribe sin signos <>
+En este ejemplo asignando al elemento h1 los estilos de color blanco al texto y fondo color azul a la etiqueta <h1> en el index.html */
+
+h1 {
+    color: white;
+    background-color: blue;
+}
+
+/* Tipo ETIQUETA p color de texto azul */
+p {
+    color: blue;
+}
+
+/* Selector DEPENDIENTE 
+   En este ejemplo asignamos cursiva con font-style a todas las etiquetas negrita que estén dentro de un p*/
+
+p b {
+    font-style: italic;
+}
+
+/*HERENCIA: El elemento hijo hereda propiedades del Padre, en algunas etiquetas en html la herencia es por defecto
+  caso contrario definir como "inherit" para forzar la herencia */
+
+a {
+  color: inherit
+}  
+
+
+/* CASCADA: Toma el valor o propiedad del último elemento (sobreescribe) 
+   En este ejemplo se asigna primero a h2 el color gris y un subrayado (text-decoration) pero a volver usar h2 se le asigna sólo rojo oscuro
+   y como se ha cambiado el color se mostrará el texto con rojo oscuro y subrayado
+*/
+
+h2 {
+    color: grey;
+    text-decoration: underline;
+}
+
+h2 {
+    color: darkred;
+}
+
+
+/* ESPECIFICIDAD: Toma valores de acuerdo al peso del elemento según la establecido en la siguiente lista::after
+
+    S. Etiqueta = 1         (Poco usado)
+    S. Clase    = 10        (Lo más recomendado para CSS)
+    S. ID       = 100       (no recomendado, es más para JavaScript)
+    INLINE      = 1000      (Fuerza en el mismo code el graddo de prioridad)
+    IMPORTANT   = Infinito  (PEso máximo. No recomendable)
+
+En este ejemplo la etiqueta h3 incia con color blanco pero por peso la clase slogan pesa más pero messagelectura pesa más que la clase así que el elemento
+asignado se debería ver en color magenta pero como en la clase slogan, color viene con !important le da más importancia por ello el color aprevalecer será el verde claro.
+*/
+
+h3 {
+color: white;
+background-color: black;
+}
+
+#messagelectura {
+    color: magenta;
+}
+
+.slogan {
+    color: greenyellow !important;
+}
+
+
+/* ESTILOS DE TEXTO */
+
